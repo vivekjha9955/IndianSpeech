@@ -2,6 +2,7 @@
 import FirstCaraousel from "../assets/FirstCaraousel.png";
 import SecondCarousel from "../assets/SecondCaraousel.png";
 import ThirdCaraousel from "../assets/ThirdCaraousel.png";
+import FourthCaraousel from "../assets/FourthCarousel.png";
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
@@ -32,6 +33,11 @@ export const HERO_SLIDES = [
     image: FirstCaraousel,
     alt: "Hearing care awareness banner",
   },
+    {
+    id: 4,
+    image: FourthCaraousel,
+    alt: "Speech therapy banner",
+  },
   {
     id: 2,
     image: SecondCarousel,
@@ -41,7 +47,8 @@ export const HERO_SLIDES = [
     id: 3,
     image: ThirdCaraousel,
     alt: "Advanced hearing aids banner",
-  },
+  }
+
 ];
 
 // ===== SERVICES DATA =====
@@ -57,7 +64,7 @@ export const STATS = [
   { id: 1, icon: "fas fa-calendar-days", target: 17, suffix: "+", label: "Years of Experience" },
   { id: 2, icon: "fas fa-face-smile", target: 9000, suffix: "+", label: "Happy Customers" },
   { id: 3, icon: "fas fa-headphones", target: 13000, suffix: "+", label: "Hearing Aids Sold" },
-  { id: 4, icon: "fas fa-stethoscope", target: 11000, suffix: "+", label: "Hearing Tests Done" },
+  { id: 4, icon: "fas fa-stethoscope", target: 46000, suffix: "+", label: "Hearing Tests Done" },
 ];
 
 // ===== WHY TRUST DATA =====
@@ -65,7 +72,7 @@ export const TRUST_ITEMS = [
   // { id: 1, icon: "fas fa-certificate", label: "Signia Certified Center" },
   { id: 2, icon: "fas fa-user-doctor", label: "Team of Professional Audiologists" },
   { id: 3, icon: "fas fa-microscope", label: "World Class Equipments" },
-  { id: 4, icon: "fas fa-clock", label: "17+ Years of Experience" },
+  // { id: 4, icon: "fas fa-clock", label: "17+ Years of Experience" },
   { id: 5, icon: "fas fa-house-medical", label: "Home Visit Facility" },
   { id: 6, icon: "fas fa-comments", label: "Speech Therapy Available" },
 ];

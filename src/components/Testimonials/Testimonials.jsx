@@ -106,17 +106,17 @@ const Testimonials = () => {
 
           <div className="testimonials__stat-card">
             <div className="testimonials__stat-value">
-              <span>7000+</span>
+              <span>9000+</span>
             </div>
             <p>Happy Patients Served</p>
           </div>
 
-          <div className="testimonials__stat-card">
+          {/* <div className="testimonials__stat-card">
             <div className="testimonials__stat-value">
               <span>17+</span>
             </div>
             <p>Years of Trusted Care</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="testimonials__grid">
