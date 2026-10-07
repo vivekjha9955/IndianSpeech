@@ -1,6 +1,8 @@
+
 import React, { useState, useEffect, useRef } from "react";
 import "./Hero.css";
-import { HERO_SLIDES } from "../../data/constants";
+import
+ { HERO_SLIDES } from "../../data/constants";
 
 const Hero = () => {
   const [current, setCurrent] = useState(0);
@@ -37,17 +39,43 @@ const Hero = () => {
         ))}
       </div>
 
+      {/* SEO CONTENT */}
+      <div className="hero__content">
+        <h1>Hearing Clinic in Ranchi</h1>
+        <p>
+          Professional hearing tests, hearing aids, speech therapy and
+          personalized hearing care from experienced audiologists.
+        </p>
+      </div>
+
       {/* NAV */}
-      <button className="hero__btn hero__btn--prev" onClick={prev}>‹</button>
-      <button className="hero__btn hero__btn--next" onClick={next}>›</button>
+      <button
+        className="hero__btn hero__btn--prev"
+        onClick={prev}
+        aria-label="Previous slide"
+      >
+        ‹
+      </button>
+
+      <button
+        className="hero__btn hero__btn--next"
+        onClick={next}
+        aria-label="Next slide"
+      >
+        ›
+      </button>
 
       {/* DOTS */}
       <div className="hero__dots">
         {HERO_SLIDES.map((_, idx) => (
           <button
             key={idx}
-            className={`hero__dot ${idx === current ? "hero__dot--active" : ""}`}
+            className={`hero__dot ${
+              idx === current ? "hero__dot--active" : ""
+            }`}
             onClick={() => setCurrent(idx)}
+            aria-label={`Go to slide ${idx + 1}`}
+            aria-current={idx === current ? "true" : undefined}
           />
         ))}
       </div>
@@ -56,3 +84,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

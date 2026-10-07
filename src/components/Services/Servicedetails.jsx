@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import "./Servicedetail.css";
 
@@ -12,38 +13,30 @@ import engImg from "../../assets/EngTest.png";
 import ecogImg from "../../assets/ECOG.png";
 import vempImg from "../../assets/VVEMP.png";
 import oaeImg from "../../assets/OAE.png";
+
 const SERVICE_IMAGES = {
-
   "Hearing Test": hearingTestImg,
-
   "Hearing Aid": hearingAidImg,
-
   "Speech Therapy": speechTherapyImg,
-
   "Hearing Care": hearingCareImg,
-
   "Pure Tone Audiometry": ptaImg,
-
   "Speech Audiometry": speechAudiometryImg,
-
   "Auditory Brainstem Response (ABR)": abrImg,
-
   "Electronystagmography (ENG)": engImg,
-
   "Electrocochleography (ECoG)": ecogImg,
-
   "Vestibular Evoked Myogenic Potential (VEMP)": vempImg,
-
   "Otoacoustic Emission (OAE)": oaeImg,
 };
 
 const SERVICE_DETAILS = {
-    "Pure Tone Audiometry": {
-    subtitle: "Accurate hearing threshold evaluation across different sound frequencies",
-    overviewTitle: "Professional Pure Tone Audiometry for Detailed Hearing Analysis",
+  "Pure Tone Audiometry": {
+    subtitle:
+      "Accurate hearing threshold evaluation across different sound frequencies",
+    overviewTitle:
+      "Professional Pure Tone Audiometry for Detailed Hearing Analysis",
     description: [
       "Pure Tone Audiometry (PTA) is one of the most important and commonly performed hearing tests used to determine how well a person can hear different tones and frequencies. It helps us measure the softest sounds you can hear at low, mid, and high pitches.",
-      "At Indian Speech & Hearing Clinic, we use calibrated audiometric systems to accurately identify the degree and type of hearing loss. This test plays a key role in diagnosis, treatment planning, hearing aid selection, and ongoing hearing monitoring."
+      "At Indian Speech & Hearing Clinic, we use calibrated audiometric systems to accurately identify the degree and type of hearing loss. This test plays a key role in diagnosis, treatment planning, hearing aid selection, and ongoing hearing monitoring.",
     ],
     badges: [
       "Accurate hearing thresholds",
@@ -77,27 +70,27 @@ const SERVICE_DETAILS = {
       {
         num: "01",
         title: "Case History Review",
-        desc: "We understand symptoms, hearing concerns, and previous hearing history."
+        desc: "We understand symptoms, hearing concerns, and previous hearing history.",
       },
       {
         num: "02",
         title: "Ear Check / Otoscopy",
-        desc: "A quick visual inspection ensures the ear canal is clear before testing."
+        desc: "A quick visual inspection ensures the ear canal is clear before testing.",
       },
       {
         num: "03",
         title: "Air Conduction Testing",
-        desc: "You respond to tones presented through headphones at different frequencies."
+        desc: "You respond to tones presented through headphones at different frequencies.",
       },
       {
         num: "04",
         title: "Bone Conduction Testing",
-        desc: "If required, bone conduction helps determine the exact type of hearing loss."
+        desc: "If required, bone conduction helps determine the exact type of hearing loss.",
       },
       {
         num: "05",
         title: "Results & Guidance",
-        desc: "Your audiologist explains the audiogram and suggests the next best step."
+        desc: "Your audiologist explains the audiogram and suggests the next best step.",
       },
     ],
     whoFor: [
@@ -114,11 +107,13 @@ const SERVICE_DETAILS = {
   },
 
   "Speech Audiometry": {
-    subtitle: "Assessing how clearly you hear and understand spoken words",
-    overviewTitle: "Speech Audiometry for Real-World Communication Assessment",
+    subtitle:
+      "Assessing how clearly you hear and understand spoken words",
+    overviewTitle:
+      "Speech Audiometry for Real-World Communication Assessment",
     description: [
       "Speech Audiometry evaluates your ability to detect, hear, and understand speech rather than just pure tones. It gives valuable information about how clearly you can recognise words in everyday communication situations.",
-      "This test is often performed along with Pure Tone Audiometry to provide a more complete understanding of hearing function. It is especially useful when patients say they can hear sounds but still struggle to understand speech clearly."
+      "This test is often performed along with Pure Tone Audiometry to provide a more complete understanding of hearing function. It is especially useful when patients say they can hear sounds but still struggle to understand speech clearly.",
     ],
     badges: [
       "Speech understanding test",
@@ -152,27 +147,27 @@ const SERVICE_DETAILS = {
       {
         num: "01",
         title: "Initial Hearing Review",
-        desc: "We review hearing concerns and previous test findings if available."
+        desc: "We review hearing concerns and previous test findings if available.",
       },
       {
         num: "02",
         title: "Speech Reception Testing",
-        desc: "We identify the lowest level at which speech can be detected."
+        desc: "We identify the lowest level at which speech can be detected.",
       },
       {
         num: "03",
         title: "Word Recognition Testing",
-        desc: "Words are presented and your clarity/understanding is measured."
+        desc: "Words are presented and your clarity/understanding is measured.",
       },
       {
         num: "04",
         title: "Comparison With PTA",
-        desc: "Results are compared with pure tone findings for better clinical interpretation."
+        desc: "Results are compared with pure tone findings for better clinical interpretation.",
       },
       {
         num: "05",
         title: "Counselling & Recommendations",
-        desc: "We explain your speech hearing ability and suggest the right intervention."
+        desc: "We explain your speech hearing ability and suggest the right intervention.",
       },
     ],
     whoFor: [
@@ -189,11 +184,13 @@ const SERVICE_DETAILS = {
   },
 
   "Auditory Brainstem Response (ABR)": {
-    subtitle: "Objective neural hearing assessment for infants, children, and difficult-to-test patients",
-    overviewTitle: "Advanced ABR Testing for Hearing Nerve and Brainstem Response",
+    subtitle:
+      "Objective neural hearing assessment for infants, children, and difficult-to-test patients",
+    overviewTitle:
+      "Advanced ABR Testing for Hearing Nerve and Brainstem Response",
     description: [
       "Auditory Brainstem Response (ABR) is a specialised objective hearing test that measures how the auditory nerve and brainstem respond to sound. It does not require the patient to actively respond, making it ideal for infants, young children, and individuals who cannot reliably participate in standard hearing tests.",
-      "At our clinic, ABR is used to estimate hearing thresholds, assess neural pathway integrity, and support early detection of hearing loss or auditory processing issues in clinically important cases."
+      "At our clinic, ABR is used to estimate hearing thresholds, assess neural pathway integrity, and support early detection of hearing loss or auditory processing issues in clinically important cases.",
     ],
     badges: [
       "Objective hearing test",
@@ -227,27 +224,27 @@ const SERVICE_DETAILS = {
       {
         num: "01",
         title: "Preparation",
-        desc: "The patient is prepared comfortably, and the test is explained to the family."
+        desc: "The patient is prepared comfortably, and the test is explained to the family.",
       },
       {
         num: "02",
         title: "Electrode Placement",
-        desc: "Small electrodes are placed on the scalp and around the ears."
+        desc: "Small electrodes are placed on the scalp and around the ears.",
       },
       {
         num: "03",
         title: "Sound Delivery",
-        desc: "Clicks or tone bursts are delivered through earphones."
+        desc: "Clicks or tone bursts are delivered through earphones.",
       },
       {
         num: "04",
         title: "Response Recording",
-        desc: "The system records the electrical responses of the hearing pathway."
+        desc: "The system records the electrical responses of the hearing pathway.",
       },
       {
         num: "05",
         title: "Interpretation & Guidance",
-        desc: "Results are analysed and explained with recommendations for next steps."
+        desc: "Results are analysed and explained with recommendations for next steps.",
       },
     ],
     whoFor: [
@@ -258,17 +255,20 @@ const SERVICE_DETAILS = {
       "Cases with delayed speech due to possible hearing concerns",
       "Neurological auditory pathway assessment cases",
     ],
-    ctaTitle: "Need an Objective Hearing Test for a Child or Infant?",
+    ctaTitle:
+      "Need an Objective Hearing Test for a Child or Infant?",
     ctaText:
       "ABR testing provides accurate hearing pathway information and supports early diagnosis for timely treatment and better developmental outcomes.",
   },
 
   "Electronystagmography (ENG)": {
-    subtitle: "A vestibular balance test that helps diagnose dizziness, vertigo, and inner ear disorders",
-    overviewTitle: "ENG Testing for Vertigo, Dizziness, and Balance System Evaluation",
+    subtitle:
+      "A vestibular balance test that helps diagnose dizziness, vertigo, and inner ear disorders",
+    overviewTitle:
+      "ENG Testing for Vertigo, Dizziness, and Balance System Evaluation",
     description: [
       "Electronystagmography (ENG) is a specialised vestibular test used to evaluate the balance system by recording involuntary eye movements called nystagmus. Because the balance organs of the inner ear are closely connected to eye movement control, ENG helps identify whether dizziness or vertigo is linked to vestibular dysfunction.",
-      "This test is especially useful for patients experiencing spinning sensations, imbalance, motion sensitivity, or unexplained dizziness. It supports accurate diagnosis and helps guide further treatment or vestibular rehabilitation."
+      "This test is especially useful for patients experiencing spinning sensations, imbalance, motion sensitivity, or unexplained dizziness. It supports accurate diagnosis and helps guide further treatment or vestibular rehabilitation.",
     ],
     badges: [
       "Vertigo evaluation",
@@ -302,27 +302,27 @@ const SERVICE_DETAILS = {
       {
         num: "01",
         title: "Symptom Review",
-        desc: "We review dizziness, vertigo, imbalance, and related medical history."
+        desc: "We review dizziness, vertigo, imbalance, and related medical history.",
       },
       {
         num: "02",
         title: "Electrode Placement",
-        desc: "Electrodes are placed around the eyes to track movement."
+        desc: "Electrodes are placed around the eyes to track movement.",
       },
       {
         num: "03",
         title: "Tracking & Positional Tests",
-        desc: "Eye movements are recorded during visual and head-position tasks."
+        desc: "Eye movements are recorded during visual and head-position tasks.",
       },
       {
         num: "04",
         title: "Vestibular Response Analysis",
-        desc: "The recorded patterns help assess vestibular weakness or dysfunction."
+        desc: "The recorded patterns help assess vestibular weakness or dysfunction.",
       },
       {
         num: "05",
         title: "Explanation & Guidance",
-        desc: "Results are explained with recommendations for management or further evaluation."
+        desc: "Results are explained with recommendations for management or further evaluation.",
       },
     ],
     whoFor: [
@@ -339,11 +339,13 @@ const SERVICE_DETAILS = {
   },
 
   "Electrocochleography (ECoG)": {
-    subtitle: "Advanced cochlear and auditory nerve response testing for inner ear disorders",
-    overviewTitle: "Electrocochleography for Advanced Inner Ear and Auditory Assessment",
+    subtitle:
+      "Advanced cochlear and auditory nerve response testing for inner ear disorders",
+    overviewTitle:
+      "Electrocochleography for Advanced Inner Ear and Auditory Assessment",
     description: [
       "Electrocochleography (ECoG) is an advanced objective test that measures electrical potentials generated by the cochlea and auditory nerve in response to sound stimulation. It is often used in specialised cases where inner ear pressure abnormalities or Ménière’s disease are suspected.",
-      "This test provides valuable clinical information in patients who have fluctuating hearing loss, tinnitus, vertigo, ear fullness, or complex auditory symptoms that require deeper diagnostic evaluation."
+      "This test provides valuable clinical information in patients who have fluctuating hearing loss, tinnitus, vertigo, ear fullness, or complex auditory symptoms that require deeper diagnostic evaluation.",
     ],
     badges: [
       "Advanced cochlear testing",
@@ -377,27 +379,27 @@ const SERVICE_DETAILS = {
       {
         num: "01",
         title: "Clinical Review",
-        desc: "Symptoms and previous hearing or vestibular findings are reviewed."
+        desc: "Symptoms and previous hearing or vestibular findings are reviewed.",
       },
       {
         num: "02",
         title: "Electrode Setup",
-        desc: "A specialised electrode setup is used to record cochlear responses."
+        desc: "A specialised electrode setup is used to record cochlear responses.",
       },
       {
         num: "03",
         title: "Sound Stimulation",
-        desc: "Clicks or controlled sounds are presented through earphones."
+        desc: "Clicks or controlled sounds are presented through earphones.",
       },
       {
         num: "04",
         title: "Response Recording",
-        desc: "Electrical activity from the cochlea and auditory nerve is recorded."
+        desc: "Electrical activity from the cochlea and auditory nerve is recorded.",
       },
       {
         num: "05",
         title: "Interpretation",
-        desc: "The specialist analyses results to support advanced auditory diagnosis."
+        desc: "The specialist analyses results to support advanced auditory diagnosis.",
       },
     ],
     whoFor: [
@@ -414,11 +416,13 @@ const SERVICE_DETAILS = {
   },
 
   "Vestibular Evoked Myogenic Potential (VEMP)": {
-    subtitle: "Advanced vestibular pathway testing for balance-related disorders and dizziness",
-    overviewTitle: "VEMP Testing for Inner Ear Balance Organ and Nerve Pathway Assessment",
+    subtitle:
+      "Advanced vestibular pathway testing for balance-related disorders and dizziness",
+    overviewTitle:
+      "VEMP Testing for Inner Ear Balance Organ and Nerve Pathway Assessment",
     description: [
       "Vestibular Evoked Myogenic Potential (VEMP) is an advanced diagnostic test used to assess specific balance organs of the inner ear and their related nerve pathways by recording sound-triggered muscle responses.",
-      "It is commonly recommended for patients with dizziness, vertigo, imbalance, or suspected vestibular dysfunction. VEMP helps clinicians understand whether the balance system is functioning symmetrically and appropriately."
+      "It is commonly recommended for patients with dizziness, vertigo, imbalance, or suspected vestibular dysfunction. VEMP helps clinicians understand whether the balance system is functioning symmetrically and appropriately.",
     ],
     badges: [
       "Advanced vestibular test",
@@ -452,27 +456,27 @@ const SERVICE_DETAILS = {
       {
         num: "01",
         title: "History & Symptoms Review",
-        desc: "We assess dizziness, imbalance, vertigo, and related complaints."
+        desc: "We assess dizziness, imbalance, vertigo, and related complaints.",
       },
       {
         num: "02",
         title: "Electrode Placement",
-        desc: "Electrodes are placed on the neck or around the eyes depending on test type."
+        desc: "Electrodes are placed on the neck or around the eyes depending on test type.",
       },
       {
         num: "03",
         title: "Sound Presentation",
-        desc: "Controlled sound stimuli are delivered through earphones."
+        desc: "Controlled sound stimuli are delivered through earphones.",
       },
       {
         num: "04",
         title: "Muscle Response Recording",
-        desc: "Reflexive muscle responses are captured and analysed."
+        desc: "Reflexive muscle responses are captured and analysed.",
       },
       {
         num: "05",
         title: "Clinical Explanation",
-        desc: "Results are explained and integrated into your balance evaluation plan."
+        desc: "Results are explained and integrated into your balance evaluation plan.",
       },
     ],
     whoFor: [
@@ -489,11 +493,13 @@ const SERVICE_DETAILS = {
   },
 
   "Otoacoustic Emission (OAE)": {
-    subtitle: "Quick, painless, and objective cochlear screening for newborns, children, and adults",
-    overviewTitle: "OAE Testing for Fast and Reliable Inner Ear Function Screening",
+    subtitle:
+      "Quick, painless, and objective cochlear screening for newborns, children, and adults",
+    overviewTitle:
+      "OAE Testing for Fast and Reliable Inner Ear Function Screening",
     description: [
       "Otoacoustic Emission (OAE) is a quick and non-invasive hearing screening test that measures tiny sounds produced by the inner ear (cochlea), specifically the outer hair cells. It is widely used in newborn hearing screening and pediatric hearing evaluations.",
-      "Because the test does not require active participation, it is ideal for infants, young children, and anyone who needs an objective cochlear function check. It is fast, comfortable, and highly valuable for early detection."
+      "Because the test does not require active participation, it is ideal for infants, young children, and anyone who needs an objective cochlear function check. It is fast, comfortable, and highly valuable for early detection.",
     ],
     badges: [
       "Quick objective screening",
@@ -527,27 +533,27 @@ const SERVICE_DETAILS = {
       {
         num: "01",
         title: "Preparation",
-        desc: "A small soft probe is prepared for placement in the ear canal."
+        desc: "A small soft probe is prepared for placement in the ear canal.",
       },
       {
         num: "02",
         title: "Probe Placement",
-        desc: "The probe is gently placed in the ear canal comfortably."
+        desc: "The probe is gently placed in the ear canal comfortably.",
       },
       {
         num: "03",
         title: "Sound Delivery",
-        desc: "Soft clicks or tones are played through the probe."
+        desc: "Soft clicks or tones are played through the probe.",
       },
       {
         num: "04",
         title: "Response Capture",
-        desc: "The device records tiny sound emissions produced by the cochlea."
+        desc: "The device records tiny sound emissions produced by the cochlea.",
       },
       {
         num: "05",
         title: "Result Review",
-        desc: "Results are explained and further recommendations are given if needed."
+        desc: "Results are explained and further recommendations are given if needed.",
       },
     ],
     whoFor: [
@@ -562,6 +568,7 @@ const SERVICE_DETAILS = {
     ctaText:
       "OAE testing is fast, painless, and ideal for early detection of hearing concerns—especially in newborns, infants, and young children.",
   },
+
   "Hearing Test": {
     subtitle: "Accurate & comprehensive audiometric evaluation",
     overviewTitle: "Professional Hearing Assessment for All Age Groups",
@@ -639,7 +646,8 @@ const SERVICE_DETAILS = {
 
   "Hearing Aid": {
     subtitle: "Custom-fitted hearing aids from leading global brands",
-    overviewTitle: "Advanced Hearing Aid Solutions Tailored to Your Lifestyle",
+    overviewTitle:
+      "Advanced Hearing Aid Solutions Tailored to Your Lifestyle",
     description: [
       "We provide a complete hearing aid solution — from consultation and brand selection to fitting, programming, trial, and after-sales care. At Indian Speech & Hearing Clinic, we work with leading global brands to ensure every patient receives the most suitable device for their hearing profile, comfort needs, and budget.",
       "Our hearing aids are professionally programmed according to your audiogram, ensuring clear sound, improved speech understanding, and long-term comfort. We also offer device orientation, maintenance guidance, fine-tuning, and regular follow-up visits so you continue to get the best performance from your hearing aid.",
@@ -713,8 +721,10 @@ const SERVICE_DETAILS = {
   },
 
   "Speech Therapy": {
-    subtitle: "Personalised speech & language therapy for children and adults",
-    overviewTitle: "Supportive Therapy for Clearer Speech and Better Communication",
+    subtitle:
+      "Personalised speech & language therapy for children and adults",
+    overviewTitle:
+      "Supportive Therapy for Clearer Speech and Better Communication",
     description: [
       "Our speech therapy services are designed to help children and adults overcome communication challenges and improve speech clarity, language skills, fluency, and confidence. Therapy is provided by trained professionals in a supportive and structured environment.",
       "We work with a wide range of concerns including delayed speech development, articulation difficulties, stammering, voice issues, language delays, and communication challenges related to hearing loss. Each therapy plan is personalised, goal-oriented, and built around measurable progress.",
@@ -788,8 +798,10 @@ const SERVICE_DETAILS = {
   },
 
   "Hearing Care": {
-    subtitle: "Complete long-term hearing wellness and rehabilitation support",
-    overviewTitle: "Holistic Hearing Care Beyond Diagnosis and Devices",
+    subtitle:
+      "Complete long-term hearing wellness and rehabilitation support",
+    overviewTitle:
+      "Holistic Hearing Care Beyond Diagnosis and Devices",
     description: [
       "Hearing care is not only about diagnosis or hearing aids — it is about long-term hearing wellness. At Indian Speech & Hearing Clinic, we provide complete hearing care support including counselling, hearing protection guidance, tinnitus support, hearing aid maintenance, and follow-up rehabilitation.",
       "Our goal is to help every patient enjoy better hearing in daily life through personalised care, regular monitoring, device optimisation, and practical strategies for communication. Whether you already use hearing aids or are just beginning your hearing journey, we remain your long-term care partner.",
@@ -864,8 +876,33 @@ const SERVICE_DETAILS = {
 };
 
 const ServiceDetail = ({ service, onClose }) => {
-  const detail = SERVICE_DETAILS[service.title];
-  const image = SERVICE_IMAGES[service.title];
+  // FIX:
+  // AllServices now uses titles such as "Hearing Test in Ranchi".
+  // The detailed data still uses "Hearing Test".
+  // Remove " in Ranchi" before looking up the detail/image.
+  const SERVICE_KEY_MAP = {
+  "Hearing Test in Ranchi": "Hearing Test",
+  "Hearing Aid Center in Ranchi": "Hearing Aid",
+  "Speech Therapy in Ranchi": "Speech Therapy",
+  "Hearing Care in Ranchi": "Hearing Care",
+
+  "Pure Tone Audiometry Test in Ranchi": "Pure Tone Audiometry",
+  "Speech Audiometry in Ranchi": "Speech Audiometry",
+
+  "ABR Test in Ranchi": "Auditory Brainstem Response (ABR)",
+  "ENG Test in Ranchi": "Electronystagmography (ENG)",
+  "ECoG Test in Ranchi": "Electrocochleography (ECoG)",
+  "VEMP Test in Ranchi":
+    "Vestibular Evoked Myogenic Potential (VEMP)",
+  "OAE Test in Ranchi": "Otoacoustic Emission (OAE)",
+};
+
+const serviceKey =
+  SERVICE_KEY_MAP[service.title] ||
+  service.title.replace(/ in Ranchi$/i, "");
+
+const detail = SERVICE_DETAILS[serviceKey];
+const image = SERVICE_IMAGES[serviceKey];
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -898,7 +935,12 @@ const ServiceDetail = ({ service, onClose }) => {
       {/* Header */}
       <div className="svc-header">
         <div className="svc-header__inner">
-          <button className="svc-back" onClick={handleClose}>
+          <button
+            type="button"
+            className="svc-back"
+            onClick={handleClose}
+            aria-label="Go back to all services"
+          >
             <i className="fas fa-arrow-left"></i> Back
           </button>
 
@@ -906,6 +948,7 @@ const ServiceDetail = ({ service, onClose }) => {
             <div className="svc-header__icon">
               <i className={service.icon}></i>
             </div>
+
             <div>
               <h1 className="svc-header__title">{service.title}</h1>
               <p className="svc-header__sub">{detail.subtitle}</p>
@@ -920,8 +963,13 @@ const ServiceDetail = ({ service, onClose }) => {
           {/* Overview */}
           <section className="svc-overview">
             <div className="svc-overview__text">
-              <span className="svc-overview__tag">Service Overview</span>
-              <h2 className="svc-overview__title">{detail.overviewTitle}</h2>
+              <span className="svc-overview__tag">
+                Service Overview
+              </span>
+
+              <h2 className="svc-overview__title">
+                {detail.overviewTitle}
+              </h2>
 
               {detail.description.map((para, index) => (
                 <p key={index}>{para}</p>
@@ -929,8 +977,12 @@ const ServiceDetail = ({ service, onClose }) => {
 
               <div className="svc-overview__badges">
                 {detail.badges.map((badge, index) => (
-                  <span key={index} className="svc-overview__badge">
-                    <i className="fas fa-circle-check"></i> {badge}
+                  <span
+                    key={index}
+                    className="svc-overview__badge"
+                  >
+                    <i className="fas fa-circle-check"></i>{" "}
+                    {badge}
                   </span>
                 ))}
               </div>
@@ -940,7 +992,7 @@ const ServiceDetail = ({ service, onClose }) => {
               {image ? (
                 <img
                   src={image}
-                  alt={service.title}
+                  alt={`${service.title} at Indian Speech & Hearing Clinic`}
                   className="svc-overview__real-img"
                 />
               ) : (
@@ -951,22 +1003,37 @@ const ServiceDetail = ({ service, onClose }) => {
 
           {/* Highlights */}
           <section className="svc-highlights">
-            <div className="section-tag">Why Choose This Service</div>
-            <h2 className="section-title">Key Benefits & Highlights</h2>
+            <div className="section-tag">
+              Why Choose This Service
+            </div>
+
+            <h2 className="section-title">
+              Key Benefits & Highlights
+            </h2>
+
             <p className="section-subtitle">
-              Designed to provide accurate diagnosis, personalised care, and
-              better long-term outcomes for your hearing and communication
-              health.
+              Designed to provide accurate diagnosis, personalised
+              care, and better long-term outcomes for your hearing and
+              communication health.
             </p>
 
             <div className="svc-highlights__grid">
               {detail.highlights.map((item, index) => (
-                <div className="svc-highlight-card" key={index}>
+                <div
+                  className="svc-highlight-card"
+                  key={index}
+                >
                   <div className="svc-highlight-card__icon">
                     <i className={item.icon}></i>
                   </div>
-                  <h3 className="svc-highlight-card__title">{item.title}</h3>
-                  <p className="svc-highlight-card__desc">{item.desc}</p>
+
+                  <h3 className="svc-highlight-card__title">
+                    {item.title}
+                  </h3>
+
+                  <p className="svc-highlight-card__desc">
+                    {item.desc}
+                  </p>
                 </div>
               ))}
             </div>
@@ -974,19 +1041,37 @@ const ServiceDetail = ({ service, onClose }) => {
 
           {/* Steps */}
           <section className="svc-steps">
-            <div className="section-tag">What To Expect</div>
-            <h2 className="section-title">Our Step-by-Step Process</h2>
+            <div className="section-tag">
+              What To Expect
+            </div>
+
+            <h2 className="section-title">
+              Our Step-by-Step Process
+            </h2>
+
             <p className="section-subtitle">
-              Every service follows a professional, patient-friendly process so
-              you feel informed, comfortable, and supported at every stage.
+              Every service follows a professional, patient-friendly
+              process so you feel informed, comfortable, and
+              supported at every stage.
             </p>
 
             <div className="svc-steps__grid">
               {detail.steps.map((step, index) => (
-                <div className="svc-step-card" key={index}>
-                  <div className="svc-step-card__num">{step.num}</div>
-                  <h3 className="svc-step-card__title">{step.title}</h3>
-                  <p className="svc-step-card__desc">{step.desc}</p>
+                <div
+                  className="svc-step-card"
+                  key={index}
+                >
+                  <div className="svc-step-card__num">
+                    {step.num}
+                  </div>
+
+                  <h3 className="svc-step-card__title">
+                    {step.title}
+                  </h3>
+
+                  <p className="svc-step-card__desc">
+                    {step.desc}
+                  </p>
                 </div>
               ))}
             </div>
@@ -994,7 +1079,10 @@ const ServiceDetail = ({ service, onClose }) => {
 
           {/* Who is it for */}
           <section className="svc-who">
-            <h2 className="svc-who__title">Who Is This Service For?</h2>
+            <h2 className="svc-who__title">
+              Who Is This Service For?
+            </h2>
+
             <ul className="svc-who__list">
               {detail.whoFor.map((item, index) => (
                 <li key={index}>
@@ -1012,8 +1100,13 @@ const ServiceDetail = ({ service, onClose }) => {
               <p>{detail.ctaText}</p>
             </div>
 
-            <a href="#contact" className="svc-cta__btn" onClick={handleClose}>
-              Book Appointment <i className="fas fa-arrow-right"></i>
+            <a
+              href="#contact"
+              className="svc-cta__btn"
+              onClick={handleClose}
+            >
+              Book Appointment{" "}
+              <i className="fas fa-arrow-right"></i>
             </a>
           </section>
         </div>
@@ -1023,3 +1116,4 @@ const ServiceDetail = ({ service, onClose }) => {
 };
 
 export default ServiceDetail;
+
