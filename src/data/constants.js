@@ -345,28 +345,32 @@ export const NAV_LINKS = [
 
 // ===== HERO SLIDES =====
 // ===== HERO SLIDES =====
+
+// ===== HERO SLIDES =====
 export const HERO_SLIDES = [
   {
     id: 1,
     image: FirstCaraousel,
-    alt: "Hearing care awareness banner",
+    alt: "Hearing care clinic in Ranchi",
   },
   {
     id: 4,
     image: FourthCaraousel,
-    alt: "Hearing aid fitting banner",
+    alt: "Hearing aid fitting at a hearing clinic in Ranchi",
   },
   {
     id: 2,
     image: SecondCarousel,
-    alt: "Sensorineural hearing loss banner",
+    alt: "Sensorineural hearing loss care in Ranchi",
   },
   {
     id: 3,
     image: ThirdCaraousel,
-    alt: "Advanced hearing aids banner",
+    alt: "Advanced hearing aids at a hearing clinic in Ranchi",
   },
 ];
+
+
 
 // ===== SERVICES DATA =====
 export const SERVICES = [

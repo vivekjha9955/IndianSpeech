@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import "./AllServices.css";
 import ServiceDetail from "./Servicedetails";
@@ -19,101 +20,101 @@ const SERVICES_DATA = [
   {
     id: 1,
     icon: "fas fa-microscope",
-    title: "Hearing Test",
+    title: "Hearing Test in Ranchi",
     category: "Diagnostic Service",
     image: hearingTestImg,
     description:
-      "Comprehensive hearing evaluations using advanced audiometric equipment to accurately identify the type and degree of hearing loss.",
+      "Comprehensive hearing tests in Ranchi using advanced audiometric equipment to identify the type and degree of hearing loss.",
   },
   {
     id: 2,
     icon: "fas fa-headphones",
-    title: "Hearing Aid",
+    title: "Hearing Aid in Ranchi",
     category: "Device & Fitting",
     image: hearingAidImg,
     description:
-      "Premium hearing aid consultation, trial, fitting, programming, and after-care from leading global hearing aid brands.",
+      "Hearing aid consultation, trial, fitting, programming, and after-care with solutions from leading global hearing aid brands.",
   },
   {
     id: 3,
     icon: "fas fa-comments",
-    title: "Speech Therapy",
+    title: "Speech Therapy in Ranchi",
     category: "Therapy Service",
     image: speechTherapyImg,
     description:
-      "Personalised speech and language therapy for children and adults to improve communication, confidence, and daily interaction.",
+      "Personalized speech and language therapy for children and adults to support clearer communication, confidence, and everyday interaction.",
   },
   {
     id: 4,
     icon: "fas fa-heart-pulse",
-    title: "Hearing Care",
+    title: "Hearing Care in Ranchi",
     category: "Long-Term Care",
     image: hearingCareImg,
     description:
-      "End-to-end hearing wellness support including counselling, hearing protection, tinnitus guidance, and ongoing device care.",
+      "Complete hearing care support including counselling, hearing protection, tinnitus guidance, hearing aid support, and ongoing care.",
   },
   {
     id: 5,
     icon: "fas fa-wave-square",
-    title: "Pure Tone Audiometry",
+    title: "Pure Tone Audiometry Test in Ranchi",
     category: "Diagnostic Service",
     image: pureToneAudiometryImg,
     description:
-      "Pure Tone Audiometry measures hearing sensitivity across different frequencies and helps identify the degree and type of hearing loss accurately.",
+      "Pure Tone Audiometry measures hearing sensitivity across different frequencies and helps determine the degree and type of hearing loss.",
   },
   {
     id: 6,
     icon: "fas fa-comment-dots",
-    title: "Speech Audiometry",
+    title: "Speech Audiometry in Ranchi",
     category: "Diagnostic Service",
     image: speechAudiometryImg,
     description:
-      "Speech Audiometry evaluates how clearly you can hear and understand spoken words in real-world listening situations.",
+      "Speech Audiometry evaluates how clearly you can hear and understand spoken words during different listening conditions.",
   },
   {
     id: 7,
     icon: "fas fa-brain",
-    title: "Auditory Brainstem Response (ABR)",
+    title: "ABR Test in Ranchi",
     category: "Advanced Diagnostic",
     image: abrTestImg,
     description:
-      "ABR is an objective hearing test that measures how the hearing nerve and brainstem respond to sound.",
+      "Auditory Brainstem Response (ABR) is an objective hearing test that measures how the hearing nerve and brainstem respond to sound.",
   },
   {
     id: 8,
     icon: "fas fa-eye",
-    title: "Electronystagmography (ENG)",
+    title: "ENG Test in Ranchi",
     category: "Balance & Vestibular Test",
     image: engTestImg,
     description:
-      "ENG records involuntary eye movements to assess the balance system.",
+      "Electronystagmography (ENG) records involuntary eye movements to help assess the balance and vestibular system.",
   },
   {
     id: 9,
     icon: "fas fa-bolt",
-    title: "Electrocochleography (ECoG)",
+    title: "ECoG Test in Ranchi",
     category: "Advanced Diagnostic",
     image: ecogImg,
     description:
-      "ECoG is an advanced objective inner ear test.",
+      "Electrocochleography (ECoG) is an advanced objective test used to evaluate electrical responses from the inner ear.",
   },
   {
     id: 10,
     icon: "fas fa-sliders",
-    title: "Vestibular Evoked Myogenic Potential (VEMP)",
+    title: "VEMP Test in Ranchi",
     category: "Balance & Vestibular Test",
     image: vempImg,
     description:
-      "VEMP evaluates balance organ pathways.",
+      "Vestibular Evoked Myogenic Potential (VEMP) testing evaluates pathways associated with the balance organs of the inner ear.",
   },
   {
     id: 11,
     icon: "fas fa-volume-down",
-    title: "Otoacoustic Emission (OAE)",
+    title: "OAE Test in Ranchi",
     category: "Diagnostic Service",
     image: oaeImg,
     description:
-      "OAE assesses inner ear cochlear function.",
+      "Otoacoustic Emission (OAE) testing evaluates cochlear function and can be used for hearing screening and assessment.",
   },
 ];
 
@@ -126,9 +127,9 @@ const ServiceCard = ({ service, onReadDetail }) => {
         {image ? (
           <img
             src={image}
-            alt={title}
+            alt={`${title} at Indian Speech & Hearing Clinic`}
             className={`all-service-card__img ${
-              title === "Pure Tone Audiometry"
+              title.includes("Pure Tone Audiometry")
                 ? "all-service-card__img--contain"
                 : ""
             }`}
@@ -145,11 +146,15 @@ const ServiceCard = ({ service, onReadDetail }) => {
           <i className="fas fa-shield-heart"></i> {category}
         </span>
 
-        <h3 className="all-service-card__title">{title}</h3>
+        <h2 className="all-service-card__title">{title}</h2>
 
         <p className="all-service-card__desc">{description}</p>
 
-        <button className="all-service-card__btn" onClick={onReadDetail}>
+        <button
+          className="all-service-card__btn"
+          onClick={onReadDetail}
+          aria-label={`Read details about ${title}`}
+        >
           Read Service Detail <i className="fas fa-arrow-right"></i>
         </button>
       </div>
@@ -193,7 +198,11 @@ const AllServices = ({ onClose }) => {
       <div className="all-services-page">
         <div className="all-services-header">
           <div className="all-services-header__inner">
-            <button className="all-services-back" onClick={handleClose}>
+            <button
+              className="all-services-back"
+              onClick={handleClose}
+              aria-label="Go back to main services"
+            >
               <i className="fas fa-arrow-left"></i> Back
             </button>
 
@@ -203,9 +212,13 @@ const AllServices = ({ onClose }) => {
               </div>
 
               <div>
-                <h1 className="all-services-header__title">All Services</h1>
+                <h1 className="all-services-header__title">
+                  Hearing & Speech Services in Ranchi
+                </h1>
+
                 <p className="all-services-header__sub">
-                  Explore our complete range of hearing services.
+                  Explore our complete range of hearing tests, hearing aids,
+                  speech therapy, and diagnostic services in Ranchi.
                 </p>
               </div>
             </div>
@@ -238,3 +251,4 @@ const AllServices = ({ onClose }) => {
 };
 
 export default AllServices;
+

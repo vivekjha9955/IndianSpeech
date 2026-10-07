@@ -42,39 +42,74 @@ const severityLevels = [
 
 const HearingLossSeverity = () => {
   return (
-    <section className="hearing-loss-severity section">
+    <section
+      className="hearing-loss-severity section"
+      id="hearing-loss-severity"
+    >
       <div className="container">
+
+        {/* Header */}
         <div className="severity-header">
-          <span className="severity-tag">HEARING ASSESSMENT</span>
+
+          <span className="severity-tag">
+            HEARING ASSESSMENT IN RANCHI
+          </span>
+
           <h2 className="severity-title">
             Severity of <span>Hearing Loss</span>
           </h2>
+
           <p className="severity-subtitle">
-            Hearing loss is measured in decibels (dB HL). Understanding the
-            severity level helps identify the right hearing solution, treatment
-            plan, and device recommendation for every patient.
+            Hearing loss is measured in decibels (dB HL). Understanding
+            the severity level helps identify the appropriate hearing
+            solution, treatment plan, and hearing aid recommendation
+            for every patient at our hearing clinic in Ranchi.
           </p>
+
         </div>
 
+        {/* Severity Chart */}
         <div className="severity-layout">
+
+          {/* Chart Image */}
           <div className="severity-image-card">
-            <img src={hearingGradeImg} alt="Hearing Loss Severity Chart" />
+            <img
+              src={hearingGradeImg}
+              alt="Hearing loss severity chart showing mild, moderate, moderately severe, severe and profound hearing loss levels"
+            />
           </div>
 
+          {/* Severity Levels */}
           <div className="severity-bars">
+
             {severityLevels.map((item) => (
-              <div className="severity-row" key={item.id}>
+
+              <div
+                className="severity-row"
+                key={item.id}
+              >
+
                 <div
                   className={`severity-bar ${item.className}`}
                   style={{ width: item.width }}
                 >
-                  <span className="severity-label">{item.title}</span>
+                  <span className="severity-label">
+                    {item.title}
+                  </span>
                 </div>
-                <span className="severity-range">{item.range}</span>
+
+                <span className="severity-range">
+                  {item.range}
+                </span>
+
               </div>
+
             ))}
+
           </div>
+
         </div>
+
       </div>
     </section>
   );

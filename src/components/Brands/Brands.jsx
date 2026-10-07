@@ -39,13 +39,18 @@ const BrandCard = ({ brand, onOpen }) => {
   return (
     <div className={`brand-card brand-card--${themeClass}`}>
       <div className="brand-card__inner">
+
         <div className="brand-card__decor brand-card__decor--one"></div>
         <div className="brand-card__decor brand-card__decor--two"></div>
         <div className="brand-card__decor brand-card__decor--three"></div>
 
         <div className="brand-card__image-wrap">
           {image ? (
-            <img src={image} alt={brand.brand} className="brand-card__image" />
+            <img
+              src={image}
+              alt={`${brand.brand} hearing aids available at Indian Speech & Hearing Clinic in Ranchi`}
+              className="brand-card__image"
+            />
           ) : (
             <div className="brand-card__fallback">
               <i className={brand.icon}></i>
@@ -53,25 +58,38 @@ const BrandCard = ({ brand, onOpen }) => {
           )}
         </div>
 
-        <h3 className="brand-card__name">{brand.brand}</h3>
+        <h3 className="brand-card__name">
+          {brand.brand} Hearing Aids
+        </h3>
 
         <p className="brand-card__desc">
           {brand.tagline ||
-            "Premium hearing aid solutions with advanced sound clarity and comfort."}
+            `Explore ${brand.brand} hearing aid solutions with advanced sound clarity, comfort, and technology at our hearing clinic in Ranchi.`}
         </p>
 
         <div className="brand-card__meta">
+
           <span className="brand-card__badge">
-            <i className="fas fa-cubes"></i> {brand.models?.length || 0} Models
+            <i className="fas fa-cubes"></i>{" "}
+            {brand.models?.length || 0} Models
           </span>
+
           <span className="brand-card__badge">
             <i className="fas fa-star"></i> Premium
           </span>
+
         </div>
 
-        <button className="brand-card__btn" onClick={() => onOpen(brand)}>
-          View All Models <i className="fas fa-arrow-right"></i>
+        <button
+          type="button"
+          className="brand-card__btn"
+          onClick={() => onOpen(brand)}
+          aria-label={`View ${brand.brand} hearing aid models`}
+        >
+          View All Models{" "}
+          <i className="fas fa-arrow-right"></i>
         </button>
+
       </div>
     </div>
   );
@@ -79,12 +97,16 @@ const BrandCard = ({ brand, onOpen }) => {
 
 const Brands = ({ onBrandSelect }) => {
   return (
-    <section className="brands-section" id="brands">
+    <section
+      className="brands-section"
+      id="brands"
+    >
       <div className="container">
+
         <SectionHeader
-          tag="Top Brands"
-          title="Hearing Devices & Models"
-          subtitle="Explore world-class hearing aid brands trusted by audiologists globally. Compare top manufacturers, view available models, and discover the best fit for your hearing needs."
+          tag="Hearing Aid Brands in Ranchi"
+          title="Top Hearing Aid Brands & Models"
+          subtitle="Explore leading hearing aid brands available at Indian Speech & Hearing Clinic in Ranchi. Compare trusted manufacturers, explore available models, and find a hearing aid suited to your hearing needs, lifestyle, and comfort."
         />
 
         <div className="brands-grid">
@@ -96,6 +118,7 @@ const Brands = ({ onBrandSelect }) => {
             />
           ))}
         </div>
+
       </div>
     </section>
   );
